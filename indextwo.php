@@ -11,11 +11,11 @@
         <input type="text" name="num1" placeholder="Number 1">
         <input type="text" name="num2" placeholder="Number 2">
         <select name="operator" id="">
-            <option value="1">None</option>
-            <option value="2">Add</option>
-            <option value="3">Substract</option>
-            <option value="4">Multiply</option>
-            <option value="5">Divide</option>
+            <option value="None">None</option>
+            <option value="Add">Add</option>
+            <option value="Substract">Substract</option>
+            <option value="Multiply">Multiply</option>
+            <option value="Divide">Divide</option>
         </select>
         <br>
         <button type="submit" name="submit" value="submit">Calculate</button>
@@ -28,19 +28,19 @@
         $result2 = $_GET['num2'];
         $operator = $_GET['operator'];
         switch ($operator) {
-            case "1":
+            case "None":
                 echo "you need to select method";
                 break;
-            case "2";
+            case "Add";
               echo $result1 + $result2;
                 break;
-            case "3":
+            case "Substract":
                 echo $result1 - $result2;
                 break;
-            case "4":
+            case "Multiply":
                     echo $result1 * $result2;
                     break;
-            case "5":
+            case "Divide":
                     echo $result1 / $result2;
                      break;       
         }
